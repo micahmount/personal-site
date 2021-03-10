@@ -1,17 +1,19 @@
 ---
 ---
 
-I'm **Micah Mount**, a Software Engineer.
+Hi! I'm **Micah Mount**, a Software Engineer.
 
-I love all things computer science and maths.
+I love all things web development and design.
 
-Have a look at some of my working [projects].
+Here are some of the [projects] I've worked on.
 
-For more check out my academic & professional [resume].
+For even more of my background check out my [resume].
 
-Contact me at [@username] or by [email].
+If you're interested in working together,
+
+contact me at [@micahmount] or by [email].
 
 [projects]: /projects
 [resume]: /resume
-[@username]: https://twitter.com/micahmount
+[@micahmount]: https://twitter.com/micahmount
 [email]: mailto:me@micahmount.com

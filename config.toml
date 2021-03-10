@@ -25,9 +25,9 @@ theme = "sustain"
   Email         = "me@micahmount.com"
   Twitter       = "micahmount"
   LinkedIn      = "micahmount"
-  Stackoverflow = "username"
-  Medium        = "username"
-  Telegram      = "username"
+  # Stackoverflow = "username"
+  # Medium        = "username"
+  # Telegram      = "username"
   RSS           = "/blog/index.xml"
 
 ## Main Menu
