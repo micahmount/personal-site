@@ -7,4 +7,4 @@ categories: ["getting started"]
 draft: false
 ---
 
-Wow, I didn't think it would be difficult to write my 1st blog post--at least not the actual writing part of it. I'm seeing now that I've waited so long to start writing; there are tens of thousands of words, in queue, all just waiting for their turn to shine--time to get crackin'!
+Placeholder text; Hello World post to follow.
