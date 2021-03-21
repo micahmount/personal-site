@@ -7,4 +7,4 @@ categories: ["getting started"]
 draft: false
 ---
 
-Placeholder text; Hello World post to follow.
+Hello World!

@@ -1,0 +1,61 @@
+h2 {
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+header {
+  text-align: left;
+}
+
+#resume * {
+  text-align: left;
+}
+
+#header * {
+  text-align: center;
+}
+
+#skills .column {
+  display: flex;
+  justify-content: space-between;
+}
+
+#experience h2 {
+  padding-bottom: 0.2em;
+}
+
+#experience h3 {
+  padding-top: 0.5em;
+  font-size: 1.5em;
+}
+
+#experience h4 {
+  font-size: 1em;
+}
+
+#education h2 {
+  padding-bottom: 0.2em;
+}
+
+#education h3 {
+  padding-top: 0.5em;
+  font-size: 1.5em;
+}
+
+#education h4 {
+  font-size: 1em;
+}
+
+#education .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
