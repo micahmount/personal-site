@@ -1,9 +1,10 @@
 name: Projects
 source:
-  - icon: fa fa-github
-    name: Hipster Ipsum
-    description: Semiotics typewriter lomo master cleanse neutra taxidermy 8-bit knausgaard organic af normcore. Pitchfork godard selvage heirloom sriracha tousled. Bitters wayfarers kale chips, forage typewriter viral tilde. Normcore schlitz cliche, cold-pressed bespoke quinoa vaporware single-origin coffee helvetica godard succulents live-edge pop-up. Umami blog tumblr, heirloom bushwick helvetica copper mug narwhal single-origin coffee. VHS chartreuse humblebrag helvetica, yuccie vape shabby chic godard pug authentic readymade food truck.
-    url: https://github.com/micahmount
+  - img: "/img/SeedsAndStalksThumbnail.webp"
+    icon: fa fa-globe
+    name: Seeds And Stalks
+    description: Developed this custom WordPress site for a successful Herbalist and personal coach who wanted a full featured CMS. Phase one of this project was the customer facing marketing site. I helped the customer pick a design that fit her needs and had good accessibility with responsive design and UX. Then, once the marketing site was launched we completely overhauling her learning platform and integrating it with the marketing site. Not only was she able to save significantly on recurring expenses, but we were also able to improve her customer journey by giving them the convenience of one integrated experience from the beginning of the sales cycle to the learning platform and even personal coaching interactions. Within six months her sales quadrupled and her customer base increased 10x.
+    url: https://seedsandstalks.com
 
   - icon: fa fa-github
     name: Office Ipsum
