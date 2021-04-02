@@ -3,7 +3,7 @@
 
 Hi! I'm **Micah Mount**, a Software Engineer.
 
-I love all things web development and design.
+I love building software that people find delightful to use.
 
 Here are some of the [projects] I've worked on.
 
