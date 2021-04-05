@@ -1,32 +1,26 @@
 name: Projects
 source:
-  - img: "/img/SeedsAndStalksThumbnail.webp"
-    icon: fa fa-globe
+  - icon: fa fa-wordpress
+    name: UNICEF Kid Power
+    url: https://unicefkidpower.org
+    img: "/img/UnicefKidPowerThumbnail.webp"
+    description: Did all the thingz on ukp.org
+
+
+  - icon: fa fa-id-card
+    name: Active For Good Admin Dashboard
+    url: https://admin.activeforgood.com
+    img: "/img/AFGThumbnail.webp"
+    description: Made themz adminerz
+
+  - icon: fa fa-rss
+    name: Micah Mount
+    url: https://micahmount.com
+    img: "/img/mmThumbnail.webp"
+    description: This site!
+
+  - icon: fa fa-wordpress
     name: Seeds And Stalks
     url: https://seedsandstalks.com
+    img: "/img/SeedsAndStalksThumbnail.webp"
     description: Developed this custom WordPress site for a successful Herbalist and Health Coach as an integral part of her overall growth strategy. Key needs were a centralized CRM integrated with a full featured CMS. Phase one of this project was the customer facing marketing site. I helped the customer pick a design that fit her needs and had good accessibility with responsive design and UX. Then, once the marketing site was launched, phase two was that we completely overhauled her learning platform and integrated it with the marketing site. Not only was she able to save significantly on recurring expenses, but we were also able to improve her customer journey by giving them the convenience of one integrated experience from the beginning of the sales cycle to the learning platform and even health coaching interactions. Within six months her sales quadrupled and her customer base increased 10x.
-
-  - icon: fa fa-github
-    name: Office Ipsum
-    url: https://github.com/micahmount
-    description: You better eat a reality sandwich before you walk back in that boardroom cloud native container based nor it is all exactly as i said, but i don't like it bake it in that jerk from finance really threw me under the bus we need to dialog around your choice of work attire prioritize these line items.
-
-  - icon: fa fa-github
-    name: Legal Ipsum
-    url: https://github.com/micahmount
-    description: By clicking on the "ACCEPT" button where indicated, or by means of communication for a cost which does not prevent the user how to achieve your goal while meeting these conditions, then read the document `cfgguide.tex' and `modguide.tex' in the Licensed Program or any portion of it, thus forming a work means the preferred form of legal association between or among You, Apple or any subsequent version of Covered Code. However, You may Distribute Compiled forms of the Work and any other intellectual property laws of the Covered Code governed by the Initial Developer and the Individual or Organization ("Licensee") accessing and otherwise using this software, you are re-using the page in any such terms You offer. Distribution of Executable Versions. You may act only on Your own copyright statement to Your New Programs If you make to the legal code of the font ("Embedded Fonts"). Embedded Fonts are used in this Agreement. However, any and all of the Agreement is governed by the Copyright Holder, and derivatives of our free software and its terms, and termination of this license.
-
-  - icon: fa fa-globe
-    name: Hipster Ipsum
-    url: https://github.com/micahmount
-    description: Semiotics typewriter lomo master cleanse neutra taxidermy 8-bit knausgaard organic af normcore. Pitchfork godard selvage heirloom sriracha tousled. Bitters wayfarers kale chips, forage typewriter viral tilde. Normcore schlitz cliche, cold-pressed bespoke quinoa vaporware single-origin coffee helvetica godard succulents live-edge pop-up. Umami blog tumblr, heirloom bushwick helvetica copper mug narwhal single-origin coffee. VHS chartreuse humblebrag helvetica, yuccie vape shabby chic godard pug authentic readymade food truck.
-
-  - icon: fa fa-globe
-    name: Legal Ipsum
-    url: https://github.com/micahmount
-    description: By clicking on the "ACCEPT" button where indicated, or by means of communication for a cost which does not prevent the user how to achieve your goal while meeting these conditions, then read the document `cfgguide.tex' and `modguide.tex' in the Licensed Program or any portion of it, thus forming a work means the preferred form of legal association between or among You, Apple or any subsequent version of Covered Code. However, You may Distribute Compiled forms of the Work and any other intellectual property laws of the Covered Code governed by the Initial Developer and the Individual or Organization ("Licensee") accessing and otherwise using this software, you are re-using the page in any such terms You offer. Distribution of Executable Versions. You may act only on Your own copyright statement to Your New Programs If you make to the legal code of the font ("Embedded Fonts"). Embedded Fonts are used in this Agreement. However, any and all of the Agreement is governed by the Copyright Holder, and derivatives of our free software and its terms, and termination of this license.
-
-  - icon: fa fa-cog
-    name: Office Ipsum
-    url: https://github.com/micahmount
-    description: You better eat a reality sandwich before you walk back in that boardroom cloud native container based nor it is all exactly as i said, but i don't like it bake it in that jerk from finance really threw me under the bus we need to dialog around your choice of work attire prioritize these line items.

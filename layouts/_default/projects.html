@@ -6,13 +6,16 @@
     <div class="panel">
       <div class="panel-body">
         {{ range $el := .Site.Data.projects.source }}
-        <div>
-          <a href="{{ .url }}" target="_blank"><img class="img-responsive"src="{{ .img }}"></img></a>
-          <h5>
+        <div class="project">
+          <div class="img">
+          <a href="{{ .url }}" target="_blank"><img class="img-responsive"src="{{ .img }}"></img></a></div>
+          <div>
+            <h5>
             <i class="{{ .icon }}"></i>&nbsp;&nbsp;
             <b><a href="{{ .url }}" target="_blank">{{ $el.name }}</a></b
             >&nbsp;-&nbsp;{{ $el.description }}
           </h5>
+          </div>
         </div>
         {{ end }}
       </div>
