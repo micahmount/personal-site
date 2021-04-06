@@ -1,20 +1,24 @@
 {{ define "main" }}
-  <!-- Header -->
-  {{ partial "header" . }}
-
-  <div class="container">
-    <section id="projects">
-      <h4 class="my-5">{{ .Site.Data.projects.name }}</h4>
-      <div class="panel">
-        <div class="panel-body">
-          {{ range $el := .Site.Data.projects.source }}
+<!-- Header -->
+{{ partial "header" . }}
+  <section class="projects container">
+    <h4 class="my-5">{{ .Site.Data.projects.name }}</h4>
+    <div class="panel">
+      <div class="panel-body">
+        {{ range $el := .Site.Data.projects.source }}
+        <div class="project">
+          <div class="img">
+          <a href="{{ .url }}" target="_blank"><img class="img-responsive"src="{{ .img }}"></img></a></div>
+          <div>
             <h5>
-              <i class="{{ .icon }}"></i>&nbsp;&nbsp;
-              <b><a href="{{ .url }}">{{ $el.name }}</a></b>&nbsp;-&nbsp;{{ $el.description }}
-            </h5>
-          {{ end }}
+            <i class="{{ .icon }}"></i>&nbsp;&nbsp;
+            <b><a href="{{ .url }}" target="_blank">{{ $el.name }}</a></b
+            >&nbsp;-&nbsp;{{ $el.description | markdownify }}
+          </h5>
+          </div>
         </div>
+        {{ end }}
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 {{ end }}

@@ -11,10 +11,21 @@ h4 {
   font-weight: bold;
 }
 
+.container {
+  max-width: 80vw;
+}
+
+.container.small {
+  max-width: 800px;
+}
+
 header {
   text-align: left;
 }
 
+.resume.container {
+  max-width: 800px;
+}
 #resume * {
   text-align: left;
 }
@@ -58,4 +69,32 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.panel-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-body div {
+  display: flex;
+}
+
+.panel-body img {
+  border-style: none;
+  max-width: 15vw;
+  margin: auto;
+}
+
+.panel p {
+  text-align: justify;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project .img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 1em;
 }

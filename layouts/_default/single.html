@@ -1,4 +1,4 @@
-{{ define "main" }}
+  {{ define "main" }}
 <!-- Header -->
 {{ partial "header" . }}
 
@@ -8,10 +8,15 @@
   </h3>
   <div class="blog-title my-4">
     <h6>
-      {{ .Date.Format "January 2, 2006" }} &nbsp;&nbsp; {{ range .Params.tags }}
-      <span class="badge bg-success">{{ . }}</span>
+    {{ .Date.Format "January 2, 2006" }}
+    &nbsp; &nbsp; <i class="fa fa-clock-o" title="Reading Time" aria-hidden="true"></i> {{ .Page.ReadingTime}} {{ cond (eq .Page.ReadingTime 1) "minute" "minutes"}}
+    &nbsp;&nbsp; <i class="fa fa-list" title="categories" aria-hidden="true"></i>{{ range .Params.categories }}
+    <span class="badge bg-success">{{ . }}</span>
+    {{ end }} 
+      &nbsp;&nbsp; <i class="fa fa-tags" title="tags" aria-hidden="true"></i> {{ range .Params.tags }}
+      <span class="badge bg-secondary ">{{ . }}</span>
       {{ end }}
-    </h6>
+    </h6> 
   </div>
   <div class="panel">
     <div class="panel-body">
