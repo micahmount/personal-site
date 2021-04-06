@@ -13,7 +13,7 @@
             <h5>
             <i class="{{ .icon }}"></i>&nbsp;&nbsp;
             <b><a href="{{ .url }}" target="_blank">{{ $el.name }}</a></b
-            >&nbsp;-&nbsp;{{ $el.description }}
+            >&nbsp;-&nbsp;{{ $el.description | markdownify }}
           </h5>
           </div>
         </div>
