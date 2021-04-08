@@ -103,17 +103,28 @@ header {
   margin-bottom: 1em;
 }
 
+@media (max-width: 1080px) {
+  .panel-body img {
+  max-width: 20vw;
+}
+}
 @media (max-width: 800px) {
   .project {
     flex-direction: column;
   }
+  .panel-body img {
+  border-style: none;
+  max-width: 80vw;
+  margin: auto;
+  order: 2;
+}
   .img {
     width: auto;
     height: 100%;
     display: block;
     order: 2; 
   }
-  .content {
+  .project .content {
     order: 1;
   }
 }
