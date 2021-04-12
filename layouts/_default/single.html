@@ -6,16 +6,20 @@
   <h3 class="mt-3">
     <b><a href="{{ .Permalink }}">{{ .Title }}</a></b>
   </h3>
-  <div class="blog-title my-4">
-    <h6>
-    {{ .Date.Format "January 2, 2006" }}
-    &nbsp; &nbsp; <i class="fa fa-clock-o" title="Reading Time" aria-hidden="true"></i> {{ .Page.ReadingTime}} {{ cond (eq .Page.ReadingTime 1) "minute" "minutes"}}
-    &nbsp;&nbsp; <i class="fa fa-list" title="categories" aria-hidden="true"></i>{{ range .Params.categories }}
-    <span class="badge bg-success">{{ . }}</span>
-    {{ end }} 
-      &nbsp;&nbsp; <i class="fa fa-tags" title="tags" aria-hidden="true"></i> {{ range .Params.tags }}
-      <span class="badge bg-secondary ">{{ . }}</span>
+  <div class="blog blog-title my-4">
+    <h6 class="header">
+    <div>
+      <i class="fa fa-calendar" aria-hidden="true"></i> {{ .Date.Format "January 2, 2006" }} &nbsp; &nbsp;
+      <i class="fa fa-clock-o" title="Reading Time" aria-hidden="true"></i> {{ .Page.ReadingTime}} {{ cond (eq .Page.ReadingTime 1) "minute" "minutes"}}
+    </div>
+    <div>
+      <i class="fa fa-list" title="categories" aria-hidden="true"></i>{{ range .Params.categories }}
+<span class="badge bg-success"> <a style="color: white;"href="{{ "categories" | absURL }}/{{ . | urlize}}">{{ . }}</a></span>
+      {{ end }} &nbsp;&nbsp;
+      <i class="fa fa-tags" title="tags" aria-hidden="true"></i> {{ range .Params.tags }}
+      <span class="badge bg-secondary "> <a style="color: white;"href="{{"tags" | absURL}}/{{ . | urlize}}">{{ . }}</a></span>
       {{ end }}
+    </div>
     </h6> 
   </div>
   <div class="panel">
