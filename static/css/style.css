@@ -11,6 +11,15 @@ h4 {
   font-weight: bold;
 }
 
+.blog .header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header div {
+  margin-bottom: 1em;
+}
+
 .container {
   max-width: 80vw;
 }

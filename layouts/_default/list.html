@@ -3,7 +3,7 @@
 {{ partial "header" . }}
 
 <div class="container small">
-  <h4 class="my-5">Blog Archive</h4>
+  <h4 class="my-5">{{ cond (eq .Title "Blogs") "Blog" .Title }}</h4>
   <div class="panel">
     <div class="panel-body">
       {{ range .Data.Pages }}
