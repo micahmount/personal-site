@@ -35,6 +35,12 @@ header {
 .resume.container {
   max-width: 800px;
 }
+
+#logo {
+  font-family: 'Futura','Hind', sans-serif;
+  font-size: 1.1em;
+}
+
 #resume * {
   text-align: left;
 }
