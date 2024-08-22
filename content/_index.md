@@ -11,9 +11,8 @@ For even more of my background check out my [resume].
 
 If you're interested in working together,
 
-contact me at [@micahmount] or by [email].
+drop me a [line]; I'd love to hear from you.
 
 [projects]: /projects
 [resume]: /resume
-[@micahmount]: https://twitter.com/micahmount
-[email]: mailto:me@micahmount.com
+[line]: mailto:me@micahmount.com
