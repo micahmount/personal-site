@@ -10,13 +10,8 @@
     <li>
       <a href="mailto:{{ . }}"><i class="fa fa-envelope"></i></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.Twitter }}
-    <li>
-      <a href="https://twitter.com/{{ . }}" target="_blank"
-        ><i class="fa fa-twitter"></i
-      ></a>
-    </li>
-    {{ end }} {{ with .Site.Params.Social.LinkedIn }}
+    {{ end }} 
+    {{ with .Site.Params.Social.LinkedIn }}
     <li>
       <a href="https://linkedin.com/in/{{ . }}" target="_blank"
         ><i class="fa fa-linkedin"></i
