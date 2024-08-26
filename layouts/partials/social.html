@@ -6,7 +6,8 @@
         ><i class="fa fa-github"></i
       ></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.Email }}
+    {{ end }} 
+    {{ with .Site.Params.Social.Email }}
     <li>
       <a href="mailto:{{ . }}"><i class="fa fa-envelope"></i></a>
     </li>
@@ -17,25 +18,29 @@
         ><i class="fa fa-linkedin"></i
       ></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.Stackoverflow }}
+    {{ end }} 
+    {{ with .Site.Params.Social.Stackoverflow }}
     <li>
       <a href="https://stackoverflow.com/{{ . }}" target="_blank"
         ><i class="fa fa-stack-overflow"></i
       ></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.Medium }}
+    {{ end }} 
+    {{ with .Site.Params.Social.Medium }}
     <li>
       <a href="https://medium.com/@{{ . }}" target="_blank"
         ><i class="fa fa-medium"></i
       ></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.Telegram }}
+    {{ end }} 
+    {{ with .Site.Params.Social.Telegram }}
     <li>
       <a href="https://telegram.me/{{ . }}" target="_blank"
         ><i class="fa fa-telegram"></i
       ></a>
     </li>
-    {{ end }} {{ with .Site.Params.Social.RSS }}
+    {{ end }} 
+    {{ with .Site.Params.Social.RSS }}
     <li>
       <a href="{{ . }}"><i class="fa fa-rss"></i></a>
     </li>
