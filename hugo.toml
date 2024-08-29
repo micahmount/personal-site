@@ -30,20 +30,20 @@ theme = "sustain"
   # Telegram      = "username"
   RSS           = "/blog/index.xml"
 
-## Main Menu
+### Main Menu
+#[[menu.main]]
+  #name = "blog"
+  #weight = 100
+  #identifier = "blog"
+  #url = "/blog/"
+#[[menu.main]]
+  #name = "projects"
+  #identifier = "projects"
+  #weight = 200
+  #url = "/projects/"
 [[menu.main]]
-  name = "blog"
-  weight = 100
-  identifier = "blog"
-  url = "/blog/"
-[[menu.main]]
-  name = "projects"
-  identifier = "projects"
-  weight = 200
-  url = "/projects/"
-[[menu.main]]
-  name = "resume"
-  identifier = "resume"
+  name = "experience"
+  identifier = "experience"
   weight = 300
-  url = "/resume/"
+  url = "/experience/"
 
