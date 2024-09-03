@@ -67,6 +67,17 @@ header {
   font-size: 1em;
 }
 
+#experience h4 > a {
+  color: black;
+  text-decoration: underline;
+}
+
+#experience h4 > a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+
 #education h2 {
   padding-bottom: 0.2em;
 }

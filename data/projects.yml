@@ -2,16 +2,16 @@ name: Projects
 source:
   - icon: fa fa-wordpress
     name: UNICEF Kid Power
-    url: https://unicefkidpower.org
+    url: https://gokidpower.org
     img: "/img/UnicefKidPowerThumbnail.webp"
     description: I've had the privilege of working with UNICEF Kid Power for several years. During that time, I've transitioned to web development, and begun to do more and more work on their marketing site. One day recently I "looked up" and realized that I'd built every public page on the site!
 
 
   - icon: fa fa-id-card
     name: Active For Good Admin Dashboard
-    url: https://admin.activeforgood.com
+    url: https://activeforgood.com
     img: "/img/AFGThumbnail.webp"
-    description: I lead the technical support team for years at Active For Good; after moving on to web development perhaps it was only natural to take on this project. I completely rebuilt the admin dashboard--the tool used to create, manage and empower customers to facilitate Active For Good Activity Challenges.
+    description: I lead the technical support team for years at Active For Good; after moving on to web development perhaps it was only natural to take on this project. I completely rebuilt the admin dashboard--the tool used to create, manage and empower customers to facilitate Active For Good Activity Challenges. 
 
   - icon: fa fa-rss
     name: Micah Mount
