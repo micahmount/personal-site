@@ -129,6 +129,12 @@ header {
   margin-bottom: 1em;
 }
 
+.span-p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 @media (max-width: 1080px) {
   .panel-body img {
   max-width: 20vw;
