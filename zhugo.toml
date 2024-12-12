@@ -6,7 +6,7 @@ title = "Micah Mount"
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
-theme = "sustain"
+theme = ["github.com/jpanther/congo"]
 
 [permalinks]
   post = "/:year/:month/:day/:slug"
