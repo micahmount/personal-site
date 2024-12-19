@@ -14,9 +14,9 @@ draft: false
 ---
 # Automating My Blog with Obsidian and Hugo
 
-I've been meaning to resurrect my blog for months; but it just never seemed _quite_ important enough; then inspiration struck when Network Chuck did a great video & post about doing exactly what I had been planing; use Obsidian as a second brain[^1] and writing tool; then sync blog posts to Hugo. Here are his [video](https://www.youtube.com/watch?v=dnE7c0ELEH8&t=1198s) and [blog post](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/); check them out--they're great!
+I've been meaning to resurrect my blog for months; but it just never seemed _quite_ important enough; then inspiration struck when Network Chuck did a great video & post about doing exactly what I had been planning; use Obsidian as a second brain[^1] and writing tool; then sync blog posts to Hugo. Here are his [video](https://www.youtube.com/watch?v=dnE7c0ELEH8&t=1198s) and [blog post](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/); check them out--they're great!
 
-While Chuck achieved exactly what I had planned on doing, I want a little different workflow. He automated everything from Obsidian to publishing in one go; whereas I want to break that up a bit. I want to automate syncing my what I write in Obsidian over to Hugo so that my blog posts are ready to go, but I want to publish in a separate step. So I set about building on top of what Chuck had already done, and modified it to fit my preferences.
+While Chuck achieved exactly what I had planned on doing, I wanted a little different workflow. He automated everything from Obsidian to publishing in one go; whereas I wanted to break that up a bit. I want to automate syncing what I write in Obsidian over to Hugo so that my blog posts are ready to go, but I prefer to publish in a separate step. So I set about building on top of what Chuck had already done, and modified it to fit my preferences.
 
 To accomplish this I need to do 2 things:
 1. Copy blog posts from Obsidian to Hugo.
@@ -52,7 +52,7 @@ This step is interesting because there are actually a few different needs:
 - Copy link sources from Obsidian to Hugo.
 - Update the blog posts with the new link.
 
-In my case these "local resources" are images that are pasted into a post, so while they don't _have_ to be images, I'll refer to them as images from here on out, and that's also what I'm going to call my Python script--again, borrowing heavily from Network Chuck here--it really _is_ amazing how closely his project matches my preconceived requirements--score!
+In my case these "local resources" are images that I've pasted into a post, so while they don't _have_ to be images, I'll refer to them as images from here on out, and that's also what I'm going to call my Python script--again, borrowing heavily from Network Chuck here--it really _is_ amazing how closely his project matches my preconceived requirements--score!
 
 images.py
 ```python:images.py
