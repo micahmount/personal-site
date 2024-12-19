@@ -26,7 +26,7 @@ To accomplish this I needed to do 2 things:
 
 There are lots of ways to accomplish this; I wanted something easy, idempotent, and lightweight so that it could live in my blog repo and I wouldn't lose it. So I wrote a bash script (actually I borrowed _heavily_ from Chuck--thanks Chuck!) that uses rsync to sync the directories, update as needed, and  
 
-```
+```bash
 #!/bin/bash
 set -euo pipefail
 
@@ -101,7 +101,7 @@ print("Markdown files processed and images copied successfully.")
 
 To make life easier, I added running the python script into the bash scrip so that with one command my blog would be fully updated and ready for QA; here's that second part:
 
-```
+```bash
 # Step 2: Process Markdown files with Python script to handle image links
 echo "Processing image links in Markdown files..."
 if [ ! -f "images.py" ]; then
@@ -118,7 +118,7 @@ fi
 
 
 So the entire script looks like this:
-```
+```bash
 #!/bin/bash
 set -euo pipefail
 
