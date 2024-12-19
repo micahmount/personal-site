@@ -1,6 +1,6 @@
 ---
 title: Automating My Blog with Obsidian and Hugo
-date: 2024-12-17T10:57:04-08:00
+date: 2024-12-18T23:17:04-08:00
 description: Resurrecting my blog using Obsidian
 tags:
   - blog
@@ -10,7 +10,7 @@ tags:
 categories:
   - tools
   - getting started
-draft: true
+draft: false
 ---
 # Automating My Blog with Obsidian and Hugo
 
