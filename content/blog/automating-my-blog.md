@@ -14,17 +14,17 @@ draft: false
 ---
 # Automating My Blog with Obsidian and Hugo
 
-I've been meaning to do resurrect my blog for months; but it just never seemed _quite_ important enough; then inspiration struck when Network Chuck did a great video & post about doing exactly what I had been planing; use Obsidian as a second brain[^1] and writing tool; then sync blog posts to Hugo. Here are his [video](https://www.youtube.com/watch?v=dnE7c0ELEH8&t=1198s) and [blog post](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/); check them out--they're great.
+I've been meaning to resurrect my blog for months; but it just never seemed _quite_ important enough; then inspiration struck when Network Chuck did a great video & post about doing exactly what I had been planing; use Obsidian as a second brain[^1] and writing tool; then sync blog posts to Hugo. Here are his [video](https://www.youtube.com/watch?v=dnE7c0ELEH8&t=1198s) and [blog post](https://blog.networkchuck.com/posts/my-insane-blog-pipeline/); check them out--they're great!
 
-While Chuck achieved exactly what I had planned on doing, I wanted a little different workflow than he uses, so I set about to build on top of what he'd already done, and modify it to fit my preferences. In particular, I wanted to automate syncing Obsidian to Hugo, but not automate publishing Hugo; I want that to remain a manual step--at least for now.
+While Chuck achieved exactly what I had planned on doing, I want a little different workflow. He automated everything from Obsidian to publishing in one go; whereas I want to break that up a bit. I want to automate syncing my what I write in Obsidian over to Hugo so that my blog posts are ready to go, but I want to publish in a separate step. So I set about building on top of what Chuck had already done, and modified it to fit my preferences.
 
-To accomplish this I needed to do 2 things:
+To accomplish this I need to do 2 things:
 1. Copy blog posts from Obsidian to Hugo.
-2. Find any attachments referenced in any of the copied blog posts, move those to Hugo, and update the link in the blog post.
+2. Find any attachments referenced in any of the copied blog posts, move those to Hugo, and update the link(s) in the blog posts.
 
 ## Step 1: Copy blog posts from Obsidian to Hugo
 
-There are lots of ways to accomplish this; I wanted something easy, idempotent, and lightweight so that it could live in my blog repo and I wouldn't lose it. So I wrote a bash script (actually I borrowed _heavily_ from Chuck--thanks Chuck!) that uses rsync to sync the directories, update as needed, and  
+There are lots of ways to accomplish this; I want something easy, idempotent, and lightweight so that it can live in my blog repo and I won't lose it. So I wrote a bash script (actually I borrowed _heavily_ from Chuck--thanks Chuck!) that uses rsync to sync the two directories:
 
 ```bash
 #!/bin/bash
@@ -49,10 +49,10 @@ rsync -avz --delete "$ObsidianPostsPath" "$HugoPostsPath"
 
 This step is interesting because there are actually a few different needs:
 - Find all of the links in blog posts that haven't been updated yet.
-- Copy that resource from Obsidian to Hugo.
-- Update the blog post with the new link
+- Copy link sources from Obsidian to Hugo.
+- Update the blog posts with the new link.
 
-In my case these "local resources" are images that are pasted into a blog post, so while they don't _have_ to be images, I'll refer to them as images from here on out, and that's also what I'm going to name my Python script--again, we're borrowing heavily from Network Chuck here--it really _is_ amazing how closely his project matched my preconceived requirements!
+In my case these "local resources" are images that are pasted into a post, so while they don't _have_ to be images, I'll refer to them as images from here on out, and that's also what I'm going to call my Python script--again, borrowing heavily from Network Chuck here--it really _is_ amazing how closely his project matches my preconceived requirements--score!
 
 images.py
 ```python:images.py
@@ -117,7 +117,7 @@ fi
 ```
 
 
-So the entire script looks like this:
+The entire script looks like this:
 ```bash
 #!/bin/bash
 set -euo pipefail
@@ -153,9 +153,9 @@ echo "All done! Blog posts synced, image links updated and images copied over."
 ```
 
 
-From here I just made sure that both the `images.py` & `import_posts.sh` files were in the root of my blog, and that I had made the bash script executable by running `chmod +x import_posts.sh` on the command line while in the same directory.
+From here I just made sure that both the `images.py` & `import_posts.sh` files were in the root directory of my blog, and that the bash script was executable by running `chmod +x import_posts.sh` on the command line while in the same directory.
 
-And with that my I can enjoy creating content in Obsidian, and publish it easily in Hugo just by going to my Hugo directory and running `import_posts.sh` **Boom!**
+And with that my I can now enjoy creating content in Obsidian, and easily publish it with Hugo just by going to my Hugo directory and running `import_posts.sh` **Boom!**
 
 
 [^1]: If you're not familiar with this term, see the excellent book ["Building a Second Brain" by Tiago Forte](https://a.co/d/8Q3BUla)
