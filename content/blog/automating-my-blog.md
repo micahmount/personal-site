@@ -39,7 +39,8 @@ cd "$SCRIPT_DIR"
 ObsidianPostsPath="/path/to/obsidian/blog/"
 HugoPostsPath="/path/to/hugo/blog/"
 
-# Step 1: Sync blog posts from the Obsidian blog vault to the Hugo blog directory; creating new posts, updating old posts, and leaving content that's newer in the Hugo directory untouched.
+# Step 1: Sync blog posts from the Obsidian blog vault to the Hugo blog directory;
+# creating new posts, updating old posts, and leaving content that's newer in the Hugo directory untouched.
 
 echo "Syncing posts from Obsidian..."
 rsync -avz --delete "$ObsidianPostsPath" "$HugoPostsPath"
@@ -48,13 +49,14 @@ rsync -avz --delete "$ObsidianPostsPath" "$HugoPostsPath"
 ## Step 2: Handle links to local resources
 
 This step is interesting because there are actually a few different needs:
-- Find all of the links in blog posts that haven't been updated yet.
-- Copy link sources from Obsidian to Hugo.
-- Update the blog posts with the new link.
+    - Find all of the links in blog posts that haven't been updated yet.
+    - Copy link sources from Obsidian to Hugo.
+    - Update the blog posts with the new link.
 
 In my case these "local resources" are images that I've pasted into a post, so while they don't _have_ to be images, I'll refer to them as images from here on out, and that's also what I'm going to call my Python script--again, borrowing heavily from Network Chuck here--it really _is_ amazing how closely his project matches my preconceived requirements--score!
 
 images.py
+
 ```python:images.py
 
 import os
@@ -96,7 +98,6 @@ print("Markdown files processed and images copied successfully.")
 
 ```
 
-
 ## Wrapping up
 
 To make life easier, I added running the python script into the bash scrip so that with one command my blog would be fully updated and ready for QA; here's that second part:
@@ -131,7 +132,8 @@ cd "$SCRIPT_DIR"
 ObsidianPostsPath="/home/micah/Documents/notes/Obsidian Vault - personal/blog/"
 HugoPostsPath="/home/micah/Sites/micahmount.com/content/blog/"
 
-# Step 1: Sync blog posts from the Obsidian blog vault to the Hugo blog directory; creating new posts, updating old posts, and leaving content that's newer in the Hugo directory untouched.
+# Step 1: Sync blog posts from the Obsidian blog vault to the Hugo blog directory;
+# creating new posts, updating old posts, and leaving content that's newer in the Hugo directory untouched.
 
 echo "Syncing posts from Obsidian..."
 rsync -avz --delete "$ObsidianPostsPath" "$HugoPostsPath"
