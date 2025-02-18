@@ -31,14 +31,11 @@ I _may_ have used this as an excuse to build something I'd been thinking about f
 
 I waned the content to be simple HTML/CSS managed by a git repository and I also wanted to be able to update the board anytime from anywhere, so I decided to use a Raspberry Pie zero 2 w, and serve the content in a browser in Kiosk mode, and also add a VPN so that I could connect to it remotely for updates.
 
-Here's a photo of the finished menu board on the donated TV:
-
-![Image Description](/img/fika%20menuboard.png)
-
-## Hardware
-1. Raspberry Pie Zero 2 W (I opted to buy a CanaKit version because it comes with a case and power supply, memory card--everything you need to get rockin'. ) [Buy it on Amazon](https://www.amazon.com/gp/product/B0CT1NWTHY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-2. Any TV with HDMI. I happened to use one like [this](https://www.amazon.com/hisense-fire-tv-75-inch-class-u6hf-series-qled-smart-tv/dp/B0CHJ7GQ2Q/ref=sr_1_3?crid=1S7X7VE27JG07&dib=eyJ2IjoiMSJ9.fiD9rW_Pyr5AZNAFPKzKG69L2wPQp8w5EhDl5RpzuVgW6KDBPzKoiZvkZ9lFegCsRQLiZYMN181uwmFh9ajainKKC_3SPa_bFBRFigeSWXLL7_JbZRjYvQh3Z-GcSaBJugMcsTD4wsAoRCSkkeG_x1nWJ6yG3I5ysnGIpbdJjQqWFLmJOP_y8ThYMZSxherJQBcF-tiLUa31pIm5ekougHwv_4A1tmv5rLytbInxAsyiG3CR1iK1qinzCP4znQ3mtmdVtuIonn0oZ_fc_CGMBkdp_JRyHAMBAL4Ji80Crt6F1RLmEWGIhOf2bcPb553VY9ZjBLdJOcDPeObFpEVf6kamCDqR6NM5rNCONJuhJEo.Adc4DWq_3ZewHvFgOXhVwZ4i6X9VHYdMRtlden-Qr8c&dib_tag=se&keywords=hisense+75+inch+tv&qid=1736537887&s=electronics&sprefix=hisense+75%2Celectronics%2C185&sr=1-3&ufe=app_do%3Aamzn1.fos.5998aa40-ec6f-4947-a68f-cd087fee0848)
-3. HDMI cable
+## Parts
+1. Raspberry Pie Zero 2 W (I opted to buy a CanaKit version because it comes with a case and power supply, memory card--everything you need to get rockin'. ) [Buy it on Amazon](https://www.amazon.com/gp/product/B0CT1NWTHY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+2. Any TV with HDMI. I happened to use one like [this](https://www.amazon.com/hisense-fire-tv-75-inch-class-u6hf-series-qled-smart-tv/dp/B0CHJ7GQ2Q/ref=sr_1_3?crid=1S7X7VE27JG07&dib=eyJ2IjoiMSJ9.fiD9rW_Pyr5AZNAFPKzKG69L2wPQp8w5EhDl5RpzuVgW6KDBPzKoiZvkZ9lFegCsRQLiZYMN181uwmFh9ajainKKC_3SPa_bFBRFigeSWXLL7_JbZRjYvQh3Z-GcSaBJugMcsTD4wsAoRCSkkeG_x1nWJ6yG3I5ysnGIpbdJjQqWFLmJOP_y8ThYMZSxherJQBcF-tiLUa31pIm5ekougHwv_4A1tmv5rLytbInxAsyiG3CR1iK1qinzCP4znQ3mtmdVtuIonn0oZ_fc_CGMBkdp_JRyHAMBAL4Ji80Crt6F1RLmEWGIhOf2bcPb553VY9ZjBLdJOcDPeObFpEVf6kamCDqR6NM5rNCONJuhJEo.Adc4DWq_3ZewHvFgOXhVwZ4i6X9VHYdMRtlden-Qr8c&dib_tag=se&keywords=hisense+75+inch+tv&qid=1736537887&s=electronics&sprefix=hisense+75%2Celectronics%2C185&sr=1-3&ufe=app_do%3Aamzn1.fos.5998aa40-ec6f-4947-a68f-cd087fee0848).
+3. An HDMI cable.
+4. Optional: Keyboard and mouse for the Pi to edit things locally.
 
 ## Setup
 
@@ -47,7 +44,7 @@ The Raspberry Pie Zero 2 W is a great little board, but it's not really designed
 
 I stared with Chrome in Kiosk mode, but everything just fell on it's face, so I switched to [midori](https://astian.org/midori-browser/)which is more lightweight, and still offers a kiosk mode. So far it's been great! Feel free to comment below if you have suggestions for improvements though. 
 
-### Menu Board code
+### Software
 Here's the [GitHub Repository](https://github.com/micahmount/fika-menu)
 
 ### Device configuration
@@ -129,3 +126,11 @@ Here's the [GitHub Repository](https://github.com/micahmount/fika-menu)
     Test that it works by running `sudo systemctl start fika-menu.service`. Assuming that works, you can enable the service to auto start with `sudo systemctl enable fika-menu.service`.
     
     When making changes you may need to reload the systemctl daemon: `sudo systemctl daemon-reload`.
+
+## Conclusion
+
+This was a really fun project, and I am super pleased with the way it turned out. I love that we can quickly update the menu, and I think it looks nice too!
+
+Here's a photo of the finished menu board on the donated TV:
+
+![Image Description](/img/fika%20menuboard.png)
