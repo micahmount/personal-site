@@ -14,10 +14,10 @@
     </div>
     <div>
       <i class="fa fa-list" title="categories" aria-hidden="true"></i>{{ range .Params.categories }}
-<span class="badge bg-success"> <a style="color: white;"href="{{ "categories" | absURL }}/{{ . | urlize}}">{{ . }}</a></span>
+<span class="badge bg-success"> <a style="color: white;" href='{{ "categories" | absURL }}/{{ . | urlize}}'>{{ . }}</a></span>
       {{ end }} &nbsp;&nbsp;
       <i class="fa fa-tags" title="tags" aria-hidden="true"></i> {{ range .Params.tags }}
-      <span class="badge bg-secondary "> <a style="color: white;"href="{{"tags" | absURL}}/{{ . | urlize}}">{{ . }}</a></span>
+      <span class="badge bg-secondary "> <a style="color: white;" href='{{"tags" | absURL}}/{{ . | urlize}}'>{{ . }}</a></span>
       {{ end }}
     </div>
     </h6> 
