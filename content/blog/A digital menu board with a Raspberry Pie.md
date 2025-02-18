@@ -20,11 +20,11 @@ draft: false
 
 I'm a coffee nerd. I also love to use my passions and gifts to serve people. So I was pretty stoked when, a few years ago, I had the opportunity to volunteer at the coffee shop at my church.
 
-Recently we did a small renovation and among the changes proposed was replacing the old menu board. It was a simple piece of printed cardboard and had _very_ outdated prices; more importantly though since the coffee shop is not-for-profit, it didn't accurately reflect the cafe's updated product offerings.
+Recently we did a small renovation and among the changes proposed was replacing the old menu board. It was a simple piece of printed cardboard and had _very_ outdated prices, which didn't matter all that much since the coffee shop is not-for-profit.  More importantly, it didn't accurately reflect the cafe's updated product offerings.
 
 I proposed creating a digital menu board so that we could update it (both the styling and the menu items) anytime we wanted.
 
-It also helped that my day job was in the process of moving out of an office space and offered to donate this monster 75'' TV. That made the decision pretty easy for all the stakeholders and I got the :thumbsup:. 
+It also helped that my day job was in the process of moving out of an office space and offered to donate this monster 75'' TV. That made the decision pretty easy for all the stakeholders and I got the 👍. 
 
 So, the plan to was create a menu board that we could modify ad hoc. 
 I _may_ have used this as an excuse to build something I'd been thinking about for a while, and  decided on a little bit of overkill. 
