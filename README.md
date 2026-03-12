@@ -16,7 +16,7 @@ Hugo only requires git and [Hugo](https://gohugo.io/installation/) to get up and
 
  I added a set of tools to automate syncing blog posts between Obsidian and Hugo. This automation handles both content synchronization and image management.
 
-## Overview
+### Overview
 
 This toolset provides two main functions:
 
@@ -26,7 +26,7 @@ This toolset provides two main functions:
    - Copies images from Obsidian attachments to Hugo static directory
    - Updates image links in blog posts to use Hugo's format
 
-## Prerequisites
+### Prerequisites
 
 - Python 3.x
 - rsync
@@ -34,7 +34,7 @@ This toolset provides two main functions:
 - Obsidian vault with blog posts
 - Hugo blog setup
 
-## Setup
+### Setup
 
 1. Clone this repository to your local machine
 2. Update the paths in both `images.py` and `import_posts.sh`:
@@ -52,7 +52,7 @@ In `import_posts.sh`:
     HugoPostsPath="/path/to/hugo/blog/"            # Your Hugo blog posts directory
     ```
 
-## Usage
+### Usage
 
 Run the import script from the terminal:
 
@@ -66,21 +66,21 @@ This will:
 2. Process any image links in the posts
 3. Copy referenced images to Hugo's static directory
 
-## File Structure
+### File Structure
 
 - `import_posts.sh` - Main bash script that orchestrates the sync process
 - `images.py` - Python script that handles image processing and link updates
 
-## Image Formatting
+### Image Formatting
 
 The script looks for Obsidian-style image links (`[[image.png]]`) and converts them to Hugo-compatible Markdown links (`[Image Description](/img/image.png)`).
 
-## Notes
+### Notes
 
 - The sync is one-way (Obsidian → Hugo)
 - The script uses `rsync` with the `--delete` flag, so files removed from Obsidian will also be removed from Hugo
 - Make sure to backup your Hugo blog content before first use
 
-## Credits
+### Credits
 
 Based on Network Chuck's blog automation system, modified to separate the sync and publish steps.
